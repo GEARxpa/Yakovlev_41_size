@@ -23,7 +23,7 @@ namespace Yakovlev_41_size
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new ShoesPage());
+            MainFrame.Navigate(new ProductPage());
             Manager.MainFrame = MainFrame;
         }
 

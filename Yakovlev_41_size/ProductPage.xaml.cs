@@ -18,11 +18,13 @@ namespace Yakovlev_41_size
     /// <summary>
     /// Логика взаимодействия для ShoesPage.xaml
     /// </summary>
-    public partial class ShoesPage : Page
+    public partial class ProductPage : Page
     {
-        public ShoesPage()
+        public ProductPage()
         {
             InitializeComponent();
+            var CurrentProducts = Yakovlev41Entities.GetContext().Product.ToList();
+            ProductListView.ItemsSource = CurrentProducts;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
