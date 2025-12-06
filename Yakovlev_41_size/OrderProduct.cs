@@ -14,11 +14,14 @@ namespace Yakovlev_41_size
     
     public partial class OrderProduct
     {
+        internal int ProductQuantity;
+
         public int OrderID { get; set; }
         public string ProductArticleNumber { get; set; }
         public int OrderProductCount { get; set; }
     
         public virtual Order Order { get; set; }
         public virtual Product Product { get; set; }
+        public int Count { get; internal set; }
     }
 }

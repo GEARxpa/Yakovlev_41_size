@@ -23,7 +23,7 @@ namespace Yakovlev_41_size
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new ProductPage());
+            MainFrame.Navigate(new AuthPage());
             Manager.MainFrame = MainFrame;
         }
 
@@ -34,9 +34,9 @@ namespace Yakovlev_41_size
         private void MainFrame_ContentRendered(object sender, EventArgs e)
         {
             if (MainFrame.CanGoBack)
-                BtnBack.Visibility= Visibility.Visible;
+                BtnBack.Visibility = Visibility.Visible;
             else
-                BtnBack.Visibility= Visibility.Hidden;
+                BtnBack.Visibility = Visibility.Hidden;
         }
     }
 }

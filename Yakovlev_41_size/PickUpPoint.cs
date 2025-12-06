@@ -19,5 +19,10 @@ namespace Yakovlev_41_size
         public string PickUpCity { get; set; }
         public string PickUpStreet { get; set; }
         public int PickUpHouse { get; set; }
+        public string PickUpAddress { get
+            {
+                return PickUpIndex +" "+ PickUpCity + " " + PickUpStreet + " " + PickUpHouse;
+            }
+        }
     }
 }

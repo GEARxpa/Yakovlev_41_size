@@ -30,6 +30,7 @@ namespace Yakovlev_41_size
         public string ProductCategory { get; set; }
         public byte ProductDiscountAmount { get; set; }
         public int ProductQuantityInStock { get; set; }
+        public int ProductRealStock { get; set; }
         public string ProductDescription { get; set; }
         public string ProductPhoto { get; set; }
         public string ProductPhotoPath
