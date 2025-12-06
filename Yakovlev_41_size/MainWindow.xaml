@@ -5,16 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Yakovlev_41_size"
         mc:Ignorable="d"
-        Title="Яковлев 41 размер" Height="450" Width="800" FontFamily="Comic Sans MS" Icon="/img/icon.ico">
+        Title="Яковлев 41 размер" Height="600" Width="1240" FontFamily="Comic Sans MS" Icon="/img/icon.ico">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="75"/>
+            <RowDefinition Height="70"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-        <Image Source="/img/logo.png" HorizontalAlignment="Left"></Image>
-        <TextBlock Text="41 Размер" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Background="#FFFFCC99"/>
+        <WrapPanel Grid.Row="0">
+            <Image Margin="5" Source="/img/logo.png" HorizontalAlignment="Left"></Image>
+            <Button Visibility = "Collapsed"  Content="Перейти в корзину" Name="OrderMenuBtn" Grid.Row="0" HorizontalAlignment="Left" FontSize="20" Width="auto"></Button>
+        </WrapPanel>
+        <TextBlock Text="ООО 41 Размер" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         <Frame Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"></Frame>
-        <Button Content="Назад" Name="BtnBack" HorizontalAlignment="Right" Click="BtnBack_Click" Background="#FFCC6600"></Button> 
+        <Button Content="Назад" Name="BtnBack" HorizontalAlignment="Right" Click="BtnBack_Click"></Button>
+
     </Grid>
 </Window>
